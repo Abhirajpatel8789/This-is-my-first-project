@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding: 1rem;
+    /* overflow: hidden; */
+}
+/* ----------------- utility------------------- */
+/* font color : #f74f7a
+body color :#ecf0f3
+p color:#d1d3d7 */
+/* --------------------- navbar -------------------*/
+nav{
+    max-width: 100%;
+    height: 10vh;
+    background-color: #ecf0f3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    padding: 5px 20px;
+    margin-left: 5rem;
+}
+nav .logo p{
+    font-weight: 600;
+    font-size: 19px;
+    color: #343a44f6;
+}
+
+.links ul{
+    display: flex;
+    list-style: none;
+    gap: 60px;
+}
+.links ul li a{
+    text-decoration: none;
+    font-size: 13pxpx;
+    font-weight: 600;
+    color: #343a44f6;
+    
+}
+.links ul li a:hover{
+    border-bottom: 2px solid #f74f7a;
+}
+nav button{
+    padding: 4px 10px;
+    background-color: #ecf0f3;
+    border: none;
+    color: #f74f7a;
+    font-weight: 600;
+    margin-right: 5rem;
+    border-radius: 5px;
+    box-shadow:-10px -10px 10px rgba(255, 255,255, 0.6),
+    0.5px 0.5px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+span{
+    color: #f74f7a;
+}
+/* ---------------- main section start ---------------------------*/
+main{
+    max-width: 100%;
+    height: 90vh;
+    display: flex;
+}
+.left-main{
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.left-main .letterSpacing{
+    margin-left: 60px;
+    color: #343a44f6;
+    letter-spacing:4px;
+    font-weight: 100;
+}
+.left-main h1{
+    margin-left: 60px;
+    margin-top: 20px;
+    font-size: 38px;
+    color: #343a44f6;
+    font-weight: 700;
+}
+.left-main .mainpara{
+    margin-left: 60px;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #343a44f6;
+    font-weight: 200;
+}
+
+.right-main{
+    width: 50%;
+    height: 90vh;
+    position: relative;
+    z-index:-1 ;
+}
+.right-main img{
+    position: absolute;
+    width: 30rem;
+    top: 24px;
+    z-index: 2;
+}
+.right-main .bgdiv{
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    top: 80px;
+    left:85px;
+    background-color: #ecf0f3;
+    z-index: 1;
+    box-shadow:-10px -10px 10px rgba(255, 255,255, 0.6),
+    0.5px 0.5px 5px rgba(0,0,0,0.5); ;
+}
+/* ---------------------------- section start ---------------------------------- */
+section{
+    background-color: #ecf0f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+}
+.about-sec{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+h2{
+    color: #343a44f6;
+    text-align: center;
+    border-bottom: 2px solid #f74f7a;
+}
+
+.about-para{
+    display: flex;
+    margin-top: 2.5rem;
+}
+.left-sec{
+    width: 50%;
+    margin-left: 5rem;
+}
+.right-sec{
+    width: 50%;
+    margin-right: 4rem;
+}
+.div-html{
+    width: 80%;
+    height:1.2rem;
+    background-color: gray;
+    border-radius: 10px;
+    position: relative;
+}
+.div-html::before{
+    content: '';
+    width:75%;
+    height: 1.2rem;
+    background-color: #3065cf;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+}
+.div-css{
+    width: 80%;
+    height:1.2rem;
+    background-color: gray;
+    border-radius: 10px;
+    position: relative;
+}
+.div-css::before{
+    content: '';
+    width:70%;
+    height: 1.2rem;
+    background-color: #e0350f;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+
+}
+.div-js{
+    width: 80%;
+    height:1.2rem;
+    background-color: gray;
+    border-radius: 10px;
+    position: relative;
+}
+.div-js::before{
+    content: '';
+    width:60%;
+    height: 1.2rem;
+    background-color: #e3d72d;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+}
+.pa-mar{
+    margin-bottom: 0.5rem;
+}
+
+/* ------------------ services start ---------------------------- */
+.ser-con{
+    width:15rem;
+    height: 17rem;
+    background-color:#ecf0f3;
+    box-shadow: -10px -10px 10px rgba(255, 255,255, 0.6),
+    0.5px 0.5px 5px rgba(0,0,0,0.5);
+
+}
+.service-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    
+}
+.ser-con i{
+    font-size:25px;
+    color: #f74f7a;
+    margin: 10px 0px 0px 10px;
+}
+.ser-p{
+    font-size: 16px;
+    margin:15px 0px 0px 15px;
+    color: #343a44f6;
+    font-weight: 500;
+}
+.ser-value{
+    font-size: 13px;
+    margin:20px 0px 0px 15px;
+    color: #343a44f6;
+    font-weight: 400;
+}
+/* ---------------------------- contact start --------------------------- */
+
+.form-sec{
+    width: 100%;
+    height: 90vh;
+}
+.form-card{
+    width: 100%;
+}
+form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height:70px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+footer{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* ===================================  media quries ============================ */
+
+@media  (max-width: 1024px) {
+    main{
+        width: 100%;
+    }
+    .right-main img{
+        width: 25rem;
+    }
+    .right-main .bgdiv{
+        width: 15rem;
+        height: 15rem;
+    }
+    /* ======= about ========== */
+    .about-sec{
+        height: 100vh;
+        margin-top: 50px;
+    }
+    .ser-mar{
+        height: 100vh;
+       
+    }
+    .ser-con{
+        width:13rem;
+        height: 15rem;
+    }
+}
+
+/* =============== Tab ======================= */
+@media  (max-width: 768px){
+    nav{
+        width: 100vw;
+    }
+    .ser-mar{
+        height: 140vh;
+    }
+    .ser-con{
+        width:12rem;
+        height: 12rem;
+    }
+    .service-flex{
+        flex-wrap: wrap;
+    }
+    .form-sec{
+        height:100vh ;
+    }
+    footer{
+       height: 30vh;
+    }
+}
+@media  (max-width: 425px){
+    nav {
+        width: 100%;
+        background-color: #3065cf;
+    }
+    nav .links ul{
+        display: none;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo"><p><span>!</span>BNC</p></div>
+        <div class="links">
+            <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+        </div>
+        <button>Search</button>
+    </nav>
+    <main>
+        <div class="left-main">
+            <p class="letterSpacing">WELCOME TO MY WORLD</p>
+            <h1>Hi, i'm <span> Abhishek <br>a</span> Devloper </h1>
+            <p class="mainpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt assumenda deleniti asperiores similique voluptas expedita culpa non? Veniam, tempora consequatur!</p>
+        </div>
+        <div class="right-main">
+            <img src="./assets/smile.png" alt="">
+            <div class="bgdiv"></div>
+        </div>
+    </main>
+    
+    <section class="about-sec" id="about">
+        <h2>About Me</h2>
+        <div class="about-para">
+        <div class="left-sec">
+            <p class="pa-mar">HTML</p>
+            <div class="div-html"></div>
+            <p class="pa-mar">Css</p>
+            <div class="div-css"></div>
+            <p class="pa-mar">JavaScript</p>
+            <div class="div-js"></div>
+        </div>
+        <div class="right-sec"><p>Proficient in HTML, CSS, JavaScript, and MySQL, I possess the skills necessary to craft dynamic and engaging web applications. With HTML and CSS, I structure and style content, while JavaScript adds functionality and interactivity. Leveraging MySQL, I manage databases efficiently, ensuring seamless data storage and retrieval for robust web solutions.</p></div>
+        
+       </div>
+    </section>
+    <section class="ser-mar" id="Services">
+        <h2>Services</h2>
+        <div class="service-flex">
+        <div class="ser-con"><i class="fa-solid fa-book-open"></i>
+            <p class="ser-p">Web devlopment</p>
+            <p class="ser-value">"Professional web development services: custom designs, responsive layouts, SEO optimization, and ongoing support."</p>
+        </div>
+        <div class="ser-con"><i class="fa-solid fa-desktop"></i>
+            <p class="ser-p">SEO Marketing</p>
+            <p class="ser-value">"SEO marketing: Boost rankings, increase organic traffic, enhance online visibility, and drive conversions."</p>
+        </div>
+        <div class="ser-con"><i class="fa-solid fa-wifi"></i>
+          <p class="ser-p">Backend Devlopment</p>
+          <p class="ser-value">"Backend development: Secure, scalable, efficient APIs, databases, and server-side logic for robust web applications."</p>
+        </div>
+        <div class="ser-con"><i class="fa-brands fa-react"></i>
+        <p class="ser-p">React App</p>
+        <p class="ser-value">"React services: Building dynamic, interactive, and fast single-page applications with reusable components."</p>
+        </div>
+        </div>
+     <!-----    form section     ------->
+    </section>
+    <section class="form-sec" id="Contact">
+        <h2>Contact</h2>
+        <div class="form-card">
+            <form action="#" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required autocomplete="off"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required autocomplete="off"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <input type="submit" value="Submit">
+              </form>
+        </div>
+    </section>
+
+    <!----------- footer section ------------------->
+    <footer>
+        <h3>copyright &copy; Abhishek patel</h3>
+    </footer>
+
+    
+</body>
+</html>
